@@ -1,5 +1,104 @@
 {% extends "homepage/base.html" %}
 
-{% block content %}
+{% load static %}
 
+{% block content %}
+    <section id="mainscreen" class="px-5 pb-5 pt-2">
+        
+        <!-- Ribbon -->
+        <div id="mainribbon" class="d-flex justify-content-between bg-dark py-2">
+            <div class="ribbon-left ps-3">
+                <img src="{% static 'homepage/icon-ico.png' %}" alt="">
+                Portfolio.web
+            </div>
+            <div class="ribbon-right pe-3">
+                4:00pm (+5:30) || <img src="{% static 'homepage/icon-ico.png' %}" alt=""> India
+            </div>
+        </div>
+
+        <!-- Main Stuff-->
+
+        <div class="d-flex flex-row mt-2">
+            
+            <!-- LEFT BLOCK -->
+            <div class="col-lg-6">
+
+                {% comment %} Left Upper {% endcomment %}
+                <div class="d-flex flex-column bg-white text-black windowborder">
+                    {% comment %} Ribbon {% endcomment %}
+                    <div id="ribbon" class="d-flex justify-content-between bg-dark py-2 text-white">
+                        <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/button-comp.png' %}" alt=""></div>
+                        <div class="ribbon-name">BIO.JPG</div>
+                            <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt=""></div>
+                    </div>
+
+                    <div class="d-flex px-4 pt-4">
+                        <div class="col-lg-4 pe-2">
+                            <img src="{% static 'homepage/avatar-data.png' %}" class="img-fluid">
+                        </div>
+                        <div class="col-lg-6 ps-3 pt-2">
+                            <h2>Mayank_Dhankar_(HE/HIM)</h2>
+                            <h4>Web Developer @AstraTechZ</h4>
+                            <p>Turning ideas into pixels and lines of code into beautiful websites.</p>
+                        </div>
+                    </div>
+                    <hr class="mb-0">
+                    <div class="d-flex flex-row px-4 py-3">
+                        <div class="col-lg-2 pe-2">
+                            Social Links    
+                        </div>
+                        <div class="col-lg-3 pe-2">
+                            <i class="fa-brands fa-linkedin-in"></i><u>@MayankxDhankar</u>    
+                        </div>
+                        <div class="col-lg-3 pe-2">
+                            <i class="fa-brands fa-twitter"></i><u>@MayankxDhankar</u>
+                        </div>
+                        <div class="col-lg-3 pe-2">
+                            <i class="fa-brands fa-github"></i><u>@MayankxDhankar</u>
+                        </div>
+                    </div>
+                </div>
+                    
+                {% comment %} Left Lower {% endcomment %}
+                <div class="d-flex">
+                
+                    {% comment %} LEft lower Left {% endcomment %}
+                    <div class="col-lg-6 px-4 pt-4">
+                        <div class="d-flex flex-column bg-white text-black windowborder">
+                            {% comment %} Ribbon {% endcomment %}
+                            <div id="ribbon" class="d-flex justify-content-between bg-dark py-2 text-white">
+                                <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/button-comp.png' %}" alt=""></div>
+                                <div class="ribbon-name">BIO.JPG</div>
+                                <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt=""></div>
+                            </div>
+                            
+                            <div class="d-flex px-4 pt-4">
+                                    <h2>Mayank Dhankar is cool</h2>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {% comment %} LEft lower Right {% endcomment %}
+                    <div class="px-4 pt-4">
+                        <div class="d-flex flex-column bg-white text-black windowborder">
+                            {% comment %} Ribbon {% endcomment %}
+                            <div id="ribbon" class="d-flex justify-content-between bg-dark py-2 text-white">
+                                <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/button-comp.png' %}" alt=""></div>
+                                <div class="ribbon-name">BIO.JPG</div>
+                                <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt=""></div>
+                            </div>
+                            
+                            <div class="">
+                                <img src="{% static 'homepage/avatar-data.png' %}" class="" width="300" height="175">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {% comment %} Right {% endcomment %}
+            
+            
+        </div>
+
+    </section>
 {% endblock %}
