@@ -63,7 +63,7 @@
                 <div class="d-flex">
                 
                     {% comment %} LEft lower Left {% endcomment %}
-                    <div class="col-lg-6 px-4 pt-4">
+                    <div class="col-lg-6 px-4 pt-4 align-self-center">
                         <div class="d-flex flex-column bg-white text-black windowborder">
                             {% comment %} Ribbon {% endcomment %}
                             <div id="ribbon" class="d-flex justify-content-between bg-dark py-2 text-white">
@@ -94,8 +94,68 @@
                         </div>
                     </div>
                 </div>
-
+            </div>
             {% comment %} Right {% endcomment %}
+            <div class="col-lg-6">
+                    
+                <div class="d-flex flex-column h-100">
+                    
+                    <div class="d-flex filegroup justify-content-end">
+                        <div class="folders mx-3">
+                            <img src="{% static 'homepage/folder.png' %}">
+                            <h6>Web Dev Projects</h6>            
+                        </div>
+                        <div class="folders mx-3">
+                            <img src="{% static 'homepage/folder.png' %}">
+                            <h6>Web Dev Projects</h6>            
+                        </div>
+                        <div class="folders mx-3">
+                            <img src="{% static 'homepage/folder.png' %}">
+                            <h6>Web Dev Projects</h6>            
+                        </div>
+                        <div class="folders ms-3">
+                            <img src="{% static 'homepage/folder.png' %}">
+                            <h6>Web Dev Projects</h6>            
+                        </div>
+                    </div>
+
+                    <div class="d-flex rightlower ps-5">
+                        {% comment %} Right lower Left {% endcomment %}
+                        <div class="col-lg-8 px-4 pt-4 align-self-center justify-content-center ps-5">
+                            <div class="d-flex flex-column bg-white text-black windowborder">
+                                {% comment %} Ribbon {% endcomment %}
+                                <div id="ribbon" class="d-flex justify-content-between bg-dark py-2 text-white">
+                                    <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/button-comp.png' %}" alt=""></div>
+                                    <div class="ribbon-name">BIO.JPG</div>
+                                    <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt=""></div>
+                                </div>
+                                
+                                <div class="d-flex px-4 pt-4">
+                                        <h2>Mayank Dhankar is cool and the tezt here will be much bigger and large anad wider so be prepared</h2>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {% comment %} Right lower Right {% endcomment %}
+                        <div class="d-flex col-lg-4 pt-4 justify-content-end">
+                            <div class="d-flex flex-column justify-content-end">
+                                <div class="folders">
+                                    <img src="{% static 'homepage/folder.png' %}">
+                                    <h6>Web Dev Projects</h6>            
+                                </div>
+                                <div class="folders">
+                                    <img src="{% static 'homepage/folder.png' %}">
+                                    <h6>Web Dev Projects</h6>            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+                
+            
+            
             
             
         </div>
