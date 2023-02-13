@@ -12,6 +12,11 @@
         
         <!-- Font Awesome Icons -->
         <script src="https://kit.fontawesome.com/39085fcdd6.js" crossorigin="anonymous"></script>
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
         
         <!-- Custom CSS -->
         <link rel="stylesheet" href="{%static "homepage/homepage.css"%}">
@@ -23,13 +28,25 @@
                 background-position: center;
                 background-attachment: fixed;
                 height: 100vh;
-                background-color:#283036;
+                background-color:#4D7BFF;
                 color:#ffffff;
             }
-            .windowborder{
+            {% comment %} .windowborder{
                 border: 8px solid #000000;
+                border-top:0px;
                 box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
             }
+            .mainwindowborder{
+                border: 8px solid #000000;
+                border-top:0px;
+                box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+            }
+            .mainribbonborder{
+                border: 8px solid #000000;
+                border-bottom:0px;
+                border-top:0px;
+                box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+            } {% endcomment %}
             .pic{
                 height:250px;
             }
@@ -39,6 +56,35 @@
             }
             .rightlower{
                 height:100%;
+            }
+            .ribbon{
+                background-color:#000000;
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight:500;
+            }
+            .pixelfont{
+                font-family: 'IBM Plex Mono', monospace;
+            }
+            .pixelfontbold{
+                font-weight:500;
+            }
+            .nametitle{
+               font-weight:700;
+            }
+            .hehim{
+                font-size:1.25rem;
+                font-weight:400;
+            }
+            .folders{
+                font-family: 'IBM Plex Mono', monospace;
+                font-weight:500;
+            }
+            .githubsec{
+                line-height: 1.3;
+            }
+            .aboutme{
+                font-size:1.25rem;
+                line-height:1.3;
             }
         </style>
     </head>
