@@ -22,7 +22,7 @@
         <link rel="stylesheet" href="{%static "homepage/homepage.css"%}">
         <style>
             body {
-                background: url({%static 'homepage/sphere-grid.png'%});
+                background: url({%static 'homepage/sphere-grid.svg'%});
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -31,7 +31,7 @@
                 background-color:#4D7BFF;
                 color:#ffffff;
             }
-            {% comment %} .windowborder{
+            .windowborder{
                 border: 8px solid #000000;
                 border-top:0px;
                 box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
@@ -42,11 +42,11 @@
                 box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
             }
             .mainribbonborder{
-                border: 8px solid #000000;
+                {% comment %} border: 8px solid #000000; {% endcomment %}
                 border-bottom:0px;
                 border-top:0px;
                 box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
-            } {% endcomment %}
+            }
             .pic{
                 height:250px;
             }
@@ -85,6 +85,9 @@
             .aboutme{
                 font-size:1.25rem;
                 line-height:1.3;
+            }
+            a{
+                color:black;
             }
         </style>
     </head>

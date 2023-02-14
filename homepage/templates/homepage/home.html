@@ -5,15 +5,18 @@
 {% block content %}
 
 <section id="mainscreen" class="px-5 py-3 pt-4">
+
   <!-- Ribbon -->
-  <div id="mainribbon" class="ribbon d-flex justify-content-between py-2 mainribbonborder">
-    <div class="ribbon-left ps-3"><img src="{% static 'homepage/icon-ico.png' %}" alt="" />PORTFOLIO.WEB</div>
-    <div class="ribbon-right pe-3">4:00pm (+5:30) ||<img src="{% static 'homepage/icon-ico.png' %}" alt="" /> India</div>
+  <div class="row">
+      <div id="mainribbon" class="ribbon d-flex justify-content-between pt-2 mainribbonborder">
+        <div class="ribbon-left ps-3"><img src="{% static 'homepage/icon-ico.png' %}" class="me-2"/>PORTFOLIO.WEB</div>
+        <div class="ribbon-right pe-3">4:00pm (+5:30) ||<img src="{% static 'homepage/icon-ico.png' %}" alt="" /> India</div>
+      </div>
   </div>
 
   <!-- Main Stuff-->
 
-  <div class="row bg-dark p-3 mainwindowborder">
+  <div class="row bg-dark p-4 mainwindowborder">
     <!-- LEFT BLOCK -->
     <div class="col-lg-6 col-sm-12">
       {% comment %} Left Upper {% endcomment %}
@@ -21,7 +24,7 @@
         {% comment %} Ribbon {% endcomment %}
         <div class="ribbon d-flex justify-content-between py-2 text-white">
           <div class="ribbon-icon ribbon-left ps-3">
-            <img src="{% static 'homepage/buttons.png' %}" alt="" />
+            <img src="{% static 'homepage/buttons.svg' %}" alt="" />
           </div>
           <div class="ribbon-name">BIO.JPG</div>
           <div class="ribbon-date ribbon-right pe-3">
@@ -34,15 +37,15 @@
           <div class="col-lg-8 col-md-12 ps-3 pt-2">
             <h2 class="d-inline-block nametitle">Mayank Dhankar</h2>
             <span class="pixelfont hehim ps-lg-2 ps-sm-0 ps-md-0">HE/HIM</span>
-            <h5 class="fw-bold text-success">Web Developer @AstraTechZ</h5>
+            <h5 class="fw-bold">Web Developer @<a href="https://astratechz.com/" target=”_blank”>AstraTechZ</a></h5>
             <p class="hehim">Turning ideas into pixels and lines of code into beautiful websites.</p>
           </div>
         </div>
         <hr class="mb-0" />
         <div class="row px-4 py-3">
           <div class="col-lg-2 pixelfont mb-lg-0 mb-sm-1">Social Links</div>
-          <div class="col-sm-12 col-lg-4 pixelfont mb-lg-0 mb-sm-1"><i class="fa-lg fa-brands fa-linkedin-in me-2"></i>@MayankxDhankar</div>
-          <div class="col-sm-12 col-lg-4 pixelfont mb-lg-0 mb-sm-1"><i class="fa-lg fa-brands fa-twitter me-2"></i>@MayankxDhankar</div>
+          <div class="col-sm-12 col-lg-4 pixelfont mb-lg-0 mb-sm-1"><a href="https://www.linkedin.com/in/mayankxdhnkr/" target=”_blank”><i class="fa-lg fa-brands fa-linkedin-in me-2"></i>@mayankxdhankar</div></a>
+          <div class="col-sm-12 col-lg-4 pixelfont mb-lg-0 mb-sm-1"><a href="https://twitter.com/dhankar_mayank" target=”_blank”><i class="fa-lg fa-brands fa-twitter me-2"></i>@dhankar_mayank</div></a>
         </div>
       </div>
 
@@ -53,13 +56,13 @@
           <div class="d-flex flex-column bg-white text-black windowborder">
             {% comment %} Ribbon {% endcomment %}
             <div class="ribbon d-flex justify-content-between py-2 text-white">
-              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.png' %}" alt="" /></div>
-              <div class="ribbon-name">BIO.JPG</div>
+              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
+              <div class="ribbon-name">PROJECTS.GIT</div>
               <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt="" /></div>
             </div>
 
             <div class="d-flex px-4 pt-2 pixelfont">
-              <h4 class="githubsec">Check out some cool projects on my <u>Github</u><i class="fa-brands fa-github fa-xl m-2"></i></h4>
+              <h4 class="githubsec">Check out some cool projects on my <a href="https://github.com/mayankdhnkr"><u>Github</u><i class="fa-brands fa-github fa-xl m-2"></i></a></h4>
             </div>
           </div>
         </div>
@@ -69,7 +72,7 @@
           <div class="d-flex flex-column bg-white text-black windowborder">
             {% comment %} Ribbon {% endcomment %}
             <div class="ribbon d-flex justify-content-between py-2 text-white">
-              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.png' %}" alt="" /></div>
+              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
               <div class="ribbon-name">BIO.JPG</div>
               <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt="" /></div>
             </div>
@@ -86,20 +89,20 @@
         <div class="d-flex filegroup justify-content-lg-end justify-content-lg-start me-lg-3 ms-sm-3">
           <div class="row my-sm-3 my-lg-0">
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder.svg' %}" />
-              <h6>Web Dev Projects</h6>
+              <img src="{% static 'homepage/folder-webdev.svg' %}" />
+              <h6>WEB DEV PROJECTS</h6>
             </div>
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder.svg' %}" />
-              <h6>Web Dev Projects</h6>
+              <img src="{% static 'homepage/folder-videoedits.svg' %}" />
+              <h6>VIDEO EDITS</h6>
             </div>
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder.svg' %}" />
-              <h6>Web Dev Projects</h6>
+              <img src="{% static 'homepage/folder-design.svg' %}" />
+              <h6>DESIGN STUFF</h6>
             </div>
-            <div class="col-lg-3 col-md-6 folders ms-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder.svg' %}" />
-              <h6>Web Dev Projects</h6>
+            <div class="col-lg-3 col-md-6 folders ms-3 mt-sm-3 mt-lg-0 d-flex align-items-center flex-column">
+              <img src="{% static 'homepage/file-resume.svg' %}" />
+              <h6>MAYANK'S RESUME.PDF</h6>
             </div>
           </div>
           
@@ -112,7 +115,7 @@
               {% comment %} Ribbon {% endcomment %}
               <div class="ribbon d-flex justify-content-between py-2 text-white">
                 <div class="ribbon-icon ribbon-left ps-3">
-                  <img src="{% static 'homepage/buttons.png' %}" alt="" />
+                  <img src="{% static 'homepage/buttons.svg' %}" alt="" />
                 </div>
                 <div class="ribbon-name">BIO.JPG</div>
                 <div class="ribbon-date ribbon-right pe-3">
@@ -138,7 +141,7 @@
                   <img src="{% static 'homepage/folder.svg' %}" />
                   <h6>Web Dev Projects</h6>
                 </div>
-                <div class="folders mx-sm-3 me-sm-0 mx-lg-0 d-flex align-items-center flex-column">
+                <div class="folders mx-sm-3 me-sm-0 mx-lg-0 d-flex align-items-center flex-column mt-lg-3 mt-sm-0">
                   <img src="{% static 'homepage/folder.svg' %}" />
                   <h6>Web Dev Projects</h6>
                 </div>
