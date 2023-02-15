@@ -20,3 +20,16 @@ $(window).on("resize", function () {
     $(".folders").addClass("my-2");
   }
 });
+
+
+// setInterval(function () {
+//   var $webdev_icon = $("#webdev-icon");
+//   if ($webdev_icon.is(":hover")) {
+//     $("#webdev-icon").addClass("d-none");
+//     $("#webdev-icon-colored").removeClass("d-none");
+//   } 
+//   else {
+//     $("#webdev-icon").removeClass("d-none");
+//     $("#webdev-icon-colored").addClass("d-none");
+//   }
+// }, 100);

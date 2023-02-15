@@ -5,7 +5,6 @@
 {% block content %}
 
 <section id="mainscreen" class="px-5 py-3 pt-4">
-
   <!-- Ribbon -->
   <div class="row">
       <div id="mainribbon" class="ribbon d-flex justify-content-between pt-2 mainribbonborder">
@@ -61,7 +60,7 @@
               <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.svg' %}" alt="" /></div>
             </div>
 
-            <div class="d-flex px-4 pt-2 pixelfont">
+            <div class="d-flex px-4 pt-2 pixelfont github">
               <h4 class="githubsec">Check out some cool projects on my <a href="https://github.com/mayankdhnkr" target=”_blank”><u>Github</u><i class="fa-brands fa-github fa-xl m-2"></i></a></h4>
             </div>
           </div>
@@ -91,25 +90,28 @@
         <div class="d-flex filegroup justify-content-lg-end justify-content-lg-start me-lg-3 ms-sm-3">
           <div class="row my-sm-3 my-lg-0 res">
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <a href="{% url 'projects:webdev' %}" class="text-decoration-none"><img src="{% static 'homepage/folder-webdev.svg' %}" class="foldericon" />
-              <h6 class="text-white">WEB DEV PROJECTS</h6></a>
+              <a href="{% url 'projects:webdev' %}" class="text-decoration-none webdev-link">
+                <div style="height:100px;width:100px;" class="webdev-icon-div"></div>
+                <h6 class="webdevtext foldertext">WEB DEV PROJECTS</h6></a>
             </div>
             
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <a href="{% url 'projects:videoedits' %}" class="text-decoration-none"><img src="{% static 'homepage/folder-videoedits.svg' %}" class="foldericon" />
-              <h6 class="text-white">VIDEO EDITS</h6></a>
+              <a href="{% url 'projects:videoedits' %}" class="text-decoration-none video-link">
+                <div style="height:100px;width:100px;" class="video-icon-div"></div>
+                <h6 class="videotext foldertext">VIDEO EDITS</h6></a>
             </div>
             
             
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <a href="{% url 'projects:designprojects' %}" class="text-decoration-none">
-              <img src="{% static 'homepage/folder-design.svg' %}" class="foldericon" />  
-              <h6 class="text-white">DESIGN STUFF</h6></a>
+              <a href="{% url 'projects:designprojects' %}" class="text-decoration-none design-link">
+                <div style="height:100px;width:100px;" class="design-icon-div"></div>
+                <h6 class="designtext foldertext">DESIGN STUFF</h6></a>
             </div>
             
             <div class="col-lg-3 col-md-6 folders ms-3 mt-0 d-flex align-items-center flex-column">
-              <a href="{% static 'homepage/Mayank-Resume.pdf' %}" class="text-decoration-none" target=”_blank”><img src="{% static 'homepage/file-resume.svg' %}" class="foldericon" />
-              <h6 class="text-white">MAYANK'S RESUME.PDF</h6></a>
+              <a href="{% static 'homepage/Mayank-Resume.pdf' %}" class="text-decoration-none resume-link" target=”_blank”>
+                <div style="height:100px;width:100px;" class="resume-icon-div"></div>
+                <h6 class="resumetext foldertext">MAYANK'S RESUME.PDF</h6></a>
             </div>
             
           </div>

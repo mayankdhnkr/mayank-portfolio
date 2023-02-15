@@ -1,0 +1,43 @@
+/* WEBDEV */
+.webdev-icon-div {
+  background-image: url("folder-webdev.svg");
+}
+.webdev-link:hover .webdev-icon-div {
+  background-image: url("folder-webdev-colored.svg");
+}
+.webdev-link:hover .webdevtext {
+  color: #4d7bff;
+}
+
+/* Video */
+.video-icon-div {
+  background-image: url("folder-videoedits.svg");
+}
+.video-link:hover .video-icon-div {
+  background-image: url("folder-video-colored.svg");
+}
+.video-link:hover .videotext {
+  color: #4d7bff;
+}
+
+/* DESIGN */
+.design-icon-div {
+  background-image: url("folder-design.svg");
+}
+.design-link:hover .design-icon-div {
+  background-image: url("folder-design-colored.svg");
+}
+.design-link:hover .designtext {
+  color: #4d7bff;
+}
+
+/* WEBDEV */
+.resume-icon-div {
+  background-image: url("file-resume.svg");
+}
+.resume-link:hover .resume-icon-div {
+  background-image: url("resume-colored.svg");
+}
+.resume-link:hover .resumetext {
+  color: #4d7bff;
+}
