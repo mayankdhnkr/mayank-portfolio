@@ -22,22 +22,22 @@
                     <div class="col-lg-4 col-md-6 col-sm-12 mt-3 mb-5">
                         <div class="d-flex flex-column bg-white text-black windowborder h-100">
                             {% comment %} Ribbon {% endcomment %}
-                            <div class="ribbon d-flex justify-content-between py-2 text-white">
-                              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
+                            <div class="ribbonmainspacing ribbon d-flex justify-content-between py-2 text-white">
+                              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.svg' %}" class="threesoticon" alt="" /></div>
                               <div class="ribbon-name">{{project.title|upper}}</div>
-                              <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt="" /></div>
+                              <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/pic-ico.svg' %}" alt="" /></div>
                             </div>
                         
                             <div class="d-flex pixelfont h-100">
                                 <div class="card text-black h-100">
                                     {% if project.url %}
-                                        <a href="{{ project.url }}"><img src="{{ project.image.url }}" class="card-img-top img-fluid" alt="img"></a>
+                                        <a href="{{ project.url }}" target=”_blank”><img src="{{ project.image.url }}" class="card-img-top img-fluid" alt="img"></a>
                                     {% else %}
                                         <img src="{{ project.image.url }}" class="card-img-top img-fluid" alt="img">
                                     {% endif %}    
                                     <div class="card-body">
                                         {% if project.url %}
-                                            <a href="{{ project.url }}"><h4 class="card-title fw-bolder">{{project.title|upper}}</h4></a>
+                                            <a href="{{ project.url }}" target=”_blank”><h4 class="card-title fw-bolder">{{project.title|upper}}</h4></a>
                                         {% else %}
                                             <h4 class="card-title fw-bolder">{{project.title|upper}}</h4>
                                         {% endif %}

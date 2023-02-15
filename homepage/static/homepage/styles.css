@@ -1,0 +1,99 @@
+body {
+    background-image: url("sphere-grid.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    background-color:#4D7BFF;
+    color:#ffffff;
+}
+.windowborder{
+    border: 8px solid #000000;
+    border-top:0px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+}
+.mainwindowborder{
+    border: 8px solid #000000;
+    border-top:0px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+}
+.mainribbonborder{
+    border-bottom:0px;
+    border-top:0px;
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+}
+.pic{
+    height:250px;
+}
+.folders{
+    width:100px;
+    text-align:center;
+}
+.rightlower{
+    height:100%;
+}
+.ribbon{
+    background-color:#000000;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight:500;
+}
+.pixelfont{
+    font-family: 'IBM Plex Mono', monospace;
+}
+.pixelfontbold{
+    font-weight:500;
+}
+.nametitle{
+   font-weight:700;
+}
+.hehim{
+    font-size:1.25rem;
+    font-weight:400;
+}
+.folders{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight:500;
+}
+.githubsec{
+    line-height: 1.3;
+}
+.aboutme{
+    font-size:1.25rem;
+    line-height:1.3;
+}
+a{
+    color:black;
+}
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+    border-radius:0;
+}
+.resimg {
+    width: 100%;
+    object-fit: cover;
+    border-radius:0;
+}
+.card{
+    border:0;
+}
+.threesoticon{
+    display: inline;
+}
+svg:hover{
+    fill:blue  !important;
+    stroke:red;
+}
+path:hover { fill: green; }
+
+
+/* MEDIA QUERy */
+@media only screen and (max-width: 1300px) {
+    
+    .threesoticon{
+        display:none;
+    }
+
+}

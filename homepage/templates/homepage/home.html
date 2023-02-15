@@ -9,8 +9,8 @@
   <!-- Ribbon -->
   <div class="row">
       <div id="mainribbon" class="ribbon d-flex justify-content-between pt-2 mainribbonborder">
-        <div class="ribbon-left ps-3"><img src="{% static 'homepage/icon-ico.png' %}" class="me-2"/>PORTFOLIO.WEB</div>
-        <div class="ribbon-right pe-3">4:00pm (+5:30) ||<img src="{% static 'homepage/icon-ico.png' %}" alt="" /> India</div>
+        <div class="ribbon-left ps-3"><img src="{% static 'homepage/icon-ico.svg' %}" class="me-2"/>MAYANK.WEB</div>
+        <div class="ribbon-right pe-3">{{ date }}</div>
       </div>
   </div>
 
@@ -22,13 +22,13 @@
       {% comment %} Left Upper {% endcomment %}
       <div class="d-flex flex-column bg-white text-black windowborder my-sm-3 my-lg-0">
         {% comment %} Ribbon {% endcomment %}
-        <div class="ribbon d-flex justify-content-between py-2 text-white">
+        <div class="ribbonmainspacing ribbon d-flex justify-content-between py-2 text-white">
           <div class="ribbon-icon ribbon-left ps-3">
-            <img src="{% static 'homepage/buttons.svg' %}" alt="" />
+            <img class="threesoticon" src="{% static 'homepage/buttons.svg' %}" alt="" />
           </div>
           <div class="ribbon-name">BIO.JPG</div>
           <div class="ribbon-date ribbon-right pe-3">
-            <img src="{% static 'homepage/icon-ico.png' %}" alt="" />
+            <img src="{% static 'homepage/person-ico.svg' %}" alt="" />
           </div>
         </div>
 
@@ -55,29 +55,31 @@
         <div class="col-lg-6 col-sm-12 px-4 pt-4 align-self-center my-sm-3 my-lg-0">
           <div class="d-flex flex-column bg-white text-black windowborder">
             {% comment %} Ribbon {% endcomment %}
-            <div class="ribbon d-flex justify-content-between py-2 text-white">
-              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
+            <div class="ribbonmainspacing ribbon d-flex justify-content-between py-2 text-white">
+              <div class="ribbon-icon ribbon-left ps-3"><img class="threesoticon" src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
               <div class="ribbon-name">PROJECTS.GIT</div>
-              <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt="" /></div>
+              <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.svg' %}" alt="" /></div>
             </div>
 
             <div class="d-flex px-4 pt-2 pixelfont">
-              <h4 class="githubsec">Check out some cool projects on my <a href="https://github.com/mayankdhnkr"><u>Github</u><i class="fa-brands fa-github fa-xl m-2"></i></a></h4>
+              <h4 class="githubsec">Check out some cool projects on my <a href="https://github.com/mayankdhnkr" target=”_blank”><u>Github</u><i class="fa-brands fa-github fa-xl m-2"></i></a></h4>
             </div>
           </div>
         </div>
 
         {% comment %} LEft lower Right {% endcomment %}
-        <div class="col-lg-6 col-sm-12 px-4 pt-4 my-sm-3 my-lg-0">
+        <div class="col-lg-6 col-sm-12 px-4 pt-4 my-sm-3 my-lg-0 h-100">
           <div class="d-flex flex-column bg-white text-black windowborder">
             {% comment %} Ribbon {% endcomment %}
-            <div class="ribbon d-flex justify-content-between py-2 text-white">
-              <div class="ribbon-icon ribbon-left ps-3"><img src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
-              <div class="ribbon-name">BIO.JPG</div>
-              <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/icon-ico.png' %}" alt="" /></div>
+            <div class="ribbonmainspacing ribbon d-flex justify-content-between py-2 text-white">
+              <div class="ribbon-icon ribbon-left ps-3"><img class="threesoticon" src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
+              <div class="ribbon-name">PROFILE.JPG</div>
+              <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/pic-ico.svg' %}" alt="" /></div>
             </div>
 
-            <div class=""><img src="{% static 'homepage/avatar-data.png' %}" class="" width="300" height="175"/></div>
+            <div class="d-flex flex-column h-100">
+              
+            </div>
           </div>
         </div>
       </div>
@@ -87,23 +89,29 @@
     <div class="col-lg-6 col-sm-12 my-sm-3 my-lg-0">
       <div class="d-flex flex-column h-100 my-sm-3 my-lg-0">
         <div class="d-flex filegroup justify-content-lg-end justify-content-lg-start me-lg-3 ms-sm-3">
-          <div class="row my-sm-3 my-lg-0">
+          <div class="row my-sm-3 my-lg-0 res">
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder-webdev.svg' %}" />
-              <h6>WEB DEV PROJECTS</h6>
+              <a href="{% url 'projects:webdev' %}" class="text-decoration-none"><img src="{% static 'homepage/folder-webdev.svg' %}" class="foldericon" />
+              <h6 class="text-white">WEB DEV PROJECTS</h6></a>
             </div>
+            
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder-videoedits.svg' %}" />
-              <h6>VIDEO EDITS</h6>
+              <a href="{% url 'projects:videoedits' %}" class="text-decoration-none"><img src="{% static 'homepage/folder-videoedits.svg' %}" class="foldericon" />
+              <h6 class="text-white">VIDEO EDITS</h6></a>
             </div>
+            
+            
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/folder-design.svg' %}" />
-              <h6>DESIGN STUFF</h6>
+              <a href="{% url 'projects:designprojects' %}" class="text-decoration-none">
+              <img src="{% static 'homepage/folder-design.svg' %}" class="foldericon" />  
+              <h6 class="text-white">DESIGN STUFF</h6></a>
             </div>
-            <div class="col-lg-3 col-md-6 folders ms-3 mt-sm-3 mt-lg-0 d-flex align-items-center flex-column">
-              <img src="{% static 'homepage/file-resume.svg' %}" />
-              <h6>MAYANK'S RESUME.PDF</h6>
+            
+            <div class="col-lg-3 col-md-6 folders ms-3 mt-0 d-flex align-items-center flex-column">
+              <a href="{% static 'homepage/Mayank-Resume.pdf' %}" class="text-decoration-none" target=”_blank”><img src="{% static 'homepage/file-resume.svg' %}" class="foldericon" />
+              <h6 class="text-white">MAYANK'S RESUME.PDF</h6></a>
             </div>
+            
           </div>
           
         </div>
@@ -113,22 +121,22 @@
           <div class="col-lg-8 col-sm-12 px-4 pt-4 align-self-center justify-content-center ps-lg-5">
             <div class="d-flex flex-column bg-white text-black windowborder">
               {% comment %} Ribbon {% endcomment %}
-              <div class="ribbon d-flex justify-content-between py-2 text-white">
+              <div class="ribbonmainspacing ribbon d-flex justify-content-between py-2 text-white">
                 <div class="ribbon-icon ribbon-left ps-3">
-                  <img src="{% static 'homepage/buttons.svg' %}" alt="" />
+                  <img class="threesoticon" src="{% static 'homepage/buttons.svg' %}" alt="" />
                 </div>
-                <div class="ribbon-name">BIO.JPG</div>
+                <div class="ribbon-name">ABOUT.TXT</div>
                 <div class="ribbon-date ribbon-right pe-3">
-                  <img src="{% static 'homepage/icon-ico.png' %}" alt="" />
+                  <img src="{% static 'homepage/doc-ico.svg' %}" alt="" />
                 </div>
               </div>
 
               <div class="d-flex px-4 pt-2">
-                <h4 class="pixelfont aboutme">
-                  I'm Mayank, a driven undergrad student and a multi-talented designer/developer. I love to work on new idea and bring my creativity
+                <p class="pixelfont fs-5">
+                  I'm Mayank, a driven undergrad student and a multi-talented designer & developer. I love to work on new idea and bring my creativity
                   to existence. <br>Im also a huge anime fan who's always up for a discussion of fav characters. <br> <..GGs..>
 
-                </h4>
+                </p>
               </div>
             </div>
           </div>

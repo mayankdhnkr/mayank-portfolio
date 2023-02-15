@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from datetime import datetime
 
 # Create your views here.
 
-def home(request):
-    return render(request, 'homepage/home.html')
+now= datetime.now()
+currdate = now.strftime("%B %d %Y")
+currdate=currdate.upper()
 
-def testt(request):
-    return render(request, 'homepage/left.html')
+def home(request):
+    return render(request, 'homepage/home.html', {'date':currdate,})
