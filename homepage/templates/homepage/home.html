@@ -8,7 +8,7 @@
   <!-- Ribbon -->
   <div class="row">
       <div id="mainribbon" class="ribbon d-flex justify-content-between pt-2 mainribbonborder">
-        <div class="ribbon-left ps-3"><img src="{% static 'homepage/icon-ico.svg' %}" class="me-2"/>MAYANK.WEB</div>
+        <div class="ribbon-left ps-3"><img src="{% static 'homepage/person-ico.svg' %}" class="me-2"/>MAYANK.WEB</div>
         <div class="ribbon-right pe-3">{{ date }}</div>
       </div>
   </div>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="row px-4 pt-4">
-          <div class="col-lg-4 col-md-12 pe-2"><img src="{% static 'homepage/avatar-data.png' %}" class="img-fluid"/></div>
+          <div class="col-lg-4 col-md-12 pe-2"><img src="{% static 'homepage/mayank-profile.png' %}" alt="" class="img-fluid"></div>
           <div class="col-lg-8 col-md-12 ps-3 pt-2">
             <h2 class="d-inline-block nametitle">Mayank Dhankar</h2>
             <span class="pixelfont hehim ps-lg-2 ps-sm-0 ps-md-0">HE/HIM</span>
@@ -67,8 +67,8 @@
         </div>
 
         {% comment %} LEft lower Right {% endcomment %}
-        <div class="col-lg-6 col-sm-12 px-4 pt-4 my-sm-3 my-lg-0 h-100">
-          <div class="d-flex flex-column bg-white text-black windowborder">
+        <div class="col-lg-6 col-sm-12 px-4 pt-4 my-sm-3 my-lg-0">
+          <div class="d-flex flex-column bg-white text-black windowborder h-100">
             {% comment %} Ribbon {% endcomment %}
             <div class="ribbonmainspacing ribbon d-flex justify-content-between py-2 text-white">
               <div class="ribbon-icon ribbon-left ps-3"><img class="threesoticon" src="{% static 'homepage/buttons.svg' %}" alt="" /></div>
@@ -76,8 +76,8 @@
               <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/pic-ico.svg' %}" alt="" /></div>
             </div>
 
-            <div class="d-flex flex-column h-100">
-              
+            <div class="gg">
+              {% comment %} <img src="{% static 'homepage/mayank-profile.png' %}" class="img-fluid"> {% endcomment %}
             </div>
           </div>
         </div>
@@ -90,7 +90,7 @@
         <div class="d-flex filegroup justify-content-lg-end justify-content-lg-start me-lg-3 ms-sm-3">
           <div class="row my-sm-3 my-lg-0 res">
             <div class="col-lg-3 col-md-6 folders mx-3 d-flex align-items-center flex-column">
-              <a href="{% url 'projects:webdev' %}" class="text-decoration-none webdev-link">
+              <a href="{% url 'projects:webdev' %}" class="abcd text-decoration-none webdev-link">
                 <div style="height:100px;width:100px;" class="webdev-icon-div"></div>
                 <h6 class="webdevtext foldertext">WEB DEV PROJECTS</h6></a>
             </div>
@@ -136,8 +136,7 @@
               <div class="d-flex px-4 pt-2">
                 <p class="pixelfont fs-5">
                   I'm Mayank, a driven undergrad student and a multi-talented designer & developer. I love to work on new idea and bring my creativity
-                  to existence. <br>Im also a huge anime fan who's always up for a discussion of fav characters. <br> <..GGs..>
-
+                  to existence. <br>Im also a huge anime fan who's always up for a discussion about fav characters. <br> <..GGs..>
                 </p>
               </div>
             </div>
@@ -148,12 +147,16 @@
             <div class="d-flex pt-4 justify-content-lg-end h-100">
               <div class="d-flex flex-lg-column flex-sm-row pt-4 align-self-end ms-sm-3 ms-lg-0">
                 <div class="folders mx-sm-3 ms-sm-0 mx-lg-0 d-flex align-items-center flex-column">
-                  <img src="{% static 'homepage/folder.svg' %}" />
-                  <h6>Web Dev Projects</h6>
+                  <a href="{% url 'homepage:experience' %}" class="text-decoration-none exp-link">
+                    <div style="height:100px;width:100px;" class="exp-icon-div"></div>
+                    <h6 class="exptext foldertext">WORK EXPERIENCE</h6>
+                  </a>
                 </div>
                 <div class="folders mx-sm-3 me-sm-0 mx-lg-0 d-flex align-items-center flex-column mt-lg-3 mt-sm-0">
-                  <img src="{% static 'homepage/folder.svg' %}" />
-                  <h6>Web Dev Projects</h6>
+                  <a href="{% url 'homepage:contactme' %}" class="text-decoration-none contact-link">
+                    <div style="height:100px;width:100px;" class="contact-icon-div"></div>
+                    <h6 class="contacttext foldertext">CONTACT ME</h6>
+                  </a>
                 </div>
               </div>
             </div>

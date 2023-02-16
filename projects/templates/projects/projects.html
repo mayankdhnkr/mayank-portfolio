@@ -9,8 +9,8 @@
         <!-- Ribbon -->
         <div class="row">
             <div id="mainribbon" class="ribbon d-flex justify-content-between pt-2 mainribbonborder">
-              <div class="ribbon-left ps-3"><img src="{% static 'homepage/icon-ico.png' %}" class="me-2"/>PROJECTS</div>
-              <div class="ribbon-right pe-3">4:00pm (+5:30) ||<img src="{% static 'homepage/icon-ico.png' %}" alt="" /> India</div>
+                <div class="ribbon-left ps-3"><a href="/"><img src="{% static 'homepage/back-icon.svg' %}" class="me-2"/></a>PROJECTS</div>
+                <div class="ribbon-right pe-3">{{ date }}</div>
             </div>
         </div>
 
@@ -28,7 +28,7 @@
                               <div class="ribbon-date ribbon-right pe-3"><img src="{% static 'homepage/pic-ico.svg' %}" alt="" /></div>
                             </div>
                         
-                            <div class="d-flex pixelfont h-100">
+                            <div class="pixelfont h-100">
                                 <div class="card text-black h-100">
                                     {% if project.url %}
                                         <a href="{{ project.url }}" target=”_blank”><img src="{{ project.image.url }}" class="card-img-top img-fluid" alt="img"></a>

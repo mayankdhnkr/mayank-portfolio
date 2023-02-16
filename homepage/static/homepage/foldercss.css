@@ -31,7 +31,7 @@
   color: #4d7bff;
 }
 
-/* WEBDEV */
+/* RESUME */
 .resume-icon-div {
   background-image: url("file-resume.svg");
 }
@@ -40,4 +40,36 @@
 }
 .resume-link:hover .resumetext {
   color: #4d7bff;
+}
+
+/* CONTACT */
+.contact-icon-div {
+  background-image: url("folder-contact.svg");
+}
+.contact-link:hover .contact-icon-div {
+  background-image: url("folder-contact-colored.svg");
+}
+.contact-link:hover .contacttext {
+  color: #4d7bff;
+}
+
+/* EXPERIENCE */
+.exp-icon-div {
+  background-image: url("folder-exp.svg");
+}
+.exp-link:hover .exp-icon-div {
+  background-image: url("folder-exp-colored.svg");
+}
+.exp-link:hover .exptext {
+  color: #4d7bff;
+}
+
+
+/* Contact */
+.ct-card{
+  background-color: white;
+}
+.contact-card:hover .ct-card{
+  background-color: #4d7bff!important;
+  color: white!important;
 }

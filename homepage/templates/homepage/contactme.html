@@ -1,0 +1,76 @@
+{% extends "homepage/base.html" %} 
+
+{% load static %} 
+
+{% block content %}
+
+    <section id="mainscreen" class="px-5 py-3 pt-4">
+
+        <!-- Ribbon -->
+        <div class="row">
+            <div id="mainribbon" class="ribbon d-flex justify-content-between pt-2 mainribbonborder">
+                <div class="ribbon-left ps-3"><a href="/"><img src="{% static 'homepage/back-icon.svg' %}" class="me-2"/></a>CONTACT</div>
+                <div class="ribbon-right pe-3">{{ date }}</div>
+            </div>
+        </div>
+
+        <div class="row p-4 mainwindowborder bg-dark">
+            <h2 class="pixelfont my-3">CONTACT ME</h2>
+
+            <div class="d-flex flex-column">
+                <div class="row gx-5 d-flex justify-content-between ">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <a href="" class="text-decoration-none contact-card">
+                            <div class="social-link-div windowborder p-3 ct-card">
+                                <img src="{% static 'homepage/mail-icon.png' %}" alt="">
+                                <h4 class="d-inline m-0 p-0 ms-4"><u>E-MAIL</u></h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <a href="" class="text-decoration-none contact-card">
+                            <div class="social-link-div windowborder p-3 ct-card">
+                                <img src="{% static 'homepage/github-icon.png' %}" alt="">
+                                <h4 class="d-inline m-0 p-0 ms-4"><u>GITHUB</u></h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <a href="" class="text-decoration-none contact-card">
+                            <div class="social-link-div windowborder p-3 ct-card">
+                                <img src="{% static 'homepage/twitter-icon.png' %}" alt="">
+                                <h4 class="d-inline m-0 p-0 ms-4"><u>TWITTER</u></h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <a href="" class="text-decoration-none contact-card">
+                            <div class="social-link-div windowborder p-3 ct-card">
+                                <img src="{% static 'homepage/linkedin-icon.png' %}" alt="">
+                                <h4 class="d-inline m-0 p-0 ms-4"><u>LINKEDIN</u></h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <a href="" class="text-decoration-none contact-card">
+                            <div class="social-link-div windowborder p-3 ct-card">
+                                <img src="{% static 'homepage/insta-icon.png' %}" alt="">
+                                <h4 class="d-inline m-0 p-0 ms-4"><u>INSTAGRAM</u></h4>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-3">
+                        <a href="" class="text-decoration-none contact-card">
+                            <div class="social-link-div windowborder p-3 ct-card">
+                                <img src="{% static 'homepage/youtube-icon.png' %}" alt="">
+                                <h4 class="d-inline m-0 p-0 ms-4"><u>YOUTUBE</u></h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}
