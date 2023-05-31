@@ -1,7 +1,7 @@
 # Mayank's Portfolio 🚀
 
 [Check it out!!](https://mayankdhnkr.pythonanywhere.com/)
-
+![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) <br />
 This is my personal portfolio showcasing my projects and skills. It highlights my experience in web development, design and other technical fields.
 
 ![Here is a quick view of my portfolio](https://www.linkpicture.com/q/Mayank-s-Portfolio.png)
@@ -57,7 +57,7 @@ Thank you for checking out my project! I hope you find it useful and informative
 
 ## Contact
 
--   Email: your- [mayankdhankar2002@gmail.com](mailto:mayankdhankar2002@gmail.com)
+-   Email: [mayankdhankar2002@gmail.com](mailto:mayankdhankar2002@gmail.com)
 -   LinkedIn: [https://www.linkedin.com/in/mayankxdhnkr/](https://www.linkedin.com/in/mayankxdhnkr/)
 -   Personal website: [https://mayankdhnkr.pythonanywhere.com/](https://mayankdhnkr.pythonanywhere.com/)
 
