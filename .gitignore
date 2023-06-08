@@ -3,6 +3,7 @@ db.sqlite3
 venv
 homepage/migrations
 projects/migrations
+projects/images
 pagekite.py 
 media
 venv
