@@ -8,7 +8,7 @@ currdate = now.strftime("%B %d %Y")
 currdate=currdate.upper()
 
 def projects(request):
-    projects=project.objects.all()
+    projects=reversed(project.objects.all())
     return render(request, 'projects/projects.html', {'projects':projects, 'date':currdate})
 
 def videoedits(request):
